@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle"
+        android:layout_alignParentTop="true"
+        app:title="@string/NGO_register_activity_title"
+        />
+
+    <LinearLayout
+        android:id="@+id/form1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="@dimen/app_normal_margin"
+        android:visibility="visible"
+        android:layout_alignParentEnd="true">
+
+        <!--<ImageView-->
+            <!--android:layout_marginTop="@dimen/app_small_margin"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:id="@+id/ngoLogo"-->
+            <!--android:layout_width="120dp"-->
+            <!--android:layout_height="120dp"-->
+            <!--tools:src="@tools:sample/backgrounds/scenic"-->
+            <!--android:src="@drawable/animal"-->
+            <!--android:scaleType="centerCrop"-->
+            <!--/>-->
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/ngoLogo"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/animal"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"/>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOName"
+            style="@style/METStyle"
+            android:hint="@string/ngo_name_hint"
+            android:inputType="text" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOEmail"
+            style="@style/METStyle"
+            android:hint="@string/email_id_hint"
+            android:inputType="textEmailAddress" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOPassword"
+            style="@style/METStyle"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOReenterPassword"
+            style="@style/METStyle"
+            android:hint="@string/reenter_password"
+            android:inputType="textPassword" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/form2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/app_normal_margin"
+        android:visibility="gone">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOAdminName"
+            style="@style/METStyle"
+            android:hint="@string/ngo_admin_name_hint"
+            android:inputType="text" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOOfficeLocation"
+            style="@style/METStyle"
+            android:hint="@string/ngo_offlice_location_hint"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/ngogovregistered"
+            style="@style/TextViewStyle"
+            android:layout_gravity="start"
+            android:layout_marginTop="8dp"
+            android:text="@string/ngogovregistered" />
+
+        <RadioGroup
+            android:id="@+id/rdgNewGovRegistered"
+            style="@style/RadioGroup"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton
+                android:id="@+id/rdNGOyes"
+                style="@style/RadioButton"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:text="@string/yes" />
+
+            <RadioButton
+                android:id="@+id/rdNGOno"
+                style="@style/RadioButton"
+                android:layout_weight="1"
+                android:text="@string/no" />
+        </RadioGroup>
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOAbout"
+            style="@style/METStyle"
+            android:layout_marginTop="16dp"
+            android:hint="@string/about_ngo_hint"
+            android:inputType="text"
+            android:lines="3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/form3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/app_normal_margin"
+        android:visibility="gone">
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtNewNGOMobileNo"
+            style="@style/METStyle"
+            android:hint="@string/mobileno_hint"
+            android:inputType="number" />
+
+        <TextView
+            style="@style/TextViewStyle"
+            android:layout_gravity="start"
+            android:text="@string/NGO_Catagory" />
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edtNGOCatagory"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btnNGOback"
+            style="@style/ButtonStyle"
+            android:layout_margin="8dp"
+            android:layout_marginTop="@dimen/app_small_margin"
+            android:layout_weight="1"
+            android:text="@string/Back" />
+
+        <Button
+            android:id="@+id/btnNGOnext"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/app_small_margin"
+            android:layout_weight="1"
+            android:text="@string/next" />
+
+    </LinearLayout>
+</RelativeLayout>

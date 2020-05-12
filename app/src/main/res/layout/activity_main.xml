@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        style="@style/ToolbarStyle"
+        android:layout_alignParentTop="true"
+        android:textAlignment="center"
+        app:title="Login" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/app_normal_margin">
+
+        <RadioGroup
+            android:id="@+id/rdgLoginType"
+            style="@style/RadioGroup"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            >
+
+            <RadioButton
+                android:id="@+id/rdDonor"
+                style="@style/RadioButton"
+                android:checked="true"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:text="Donor" />
+
+            <RadioButton
+                android:id="@+id/rdNGO"
+                style="@style/RadioButton"
+                android:layout_weight="1"
+                android:text="NGO" />
+        </RadioGroup>
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtEmail"
+
+            android:hint="@string/email_id_hint"
+            android:inputType="textEmailAddress"
+            style="@style/METStyle" />
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/edtPassword"
+            style="@style/METStyle"
+
+            android:hint="@string/password_hint"
+            android:inputType="textPassword" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            style="@style/ButtonStyle"
+            android:layout_marginTop="@dimen/app_small_margin"
+            android:text="@string/login" />
+
+        <TextView
+            android:id="@+id/tvRegisterDonor"
+            style="@style/LinkTextStyle"
+            android:layout_marginTop="@dimen/app_small_margin"
+            android:text="@string/register_for_donor" />
+
+        <TextView
+            android:id="@+id/tvRegisterNGO"
+            android:layout_marginTop="@dimen/app_small_margin"
+            style="@style/LinkTextStyle"
+            android:text="@string/registerngo"
+            />
+
+    </LinearLayout>
+</RelativeLayout>
