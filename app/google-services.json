@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "152543992729",
+    "firebase_url": "https://ngo-project-7a4e8.firebaseio.com",
+    "project_id": "ngo-project-7a4e8",
+    "storage_bucket": "ngo-project-7a4e8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:152543992729:android:fcb93fb6fd350ab6",
+        "android_client_info": {
+          "package_name": "com.example.dell.ngoproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "152543992729-v4vf8rdui8lfbhm67leujfp9bkplt4gf.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKYZRD2HDQA0jKMNn7LMEvTkBYItyouzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "152543992729-v4vf8rdui8lfbhm67leujfp9bkplt4gf.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

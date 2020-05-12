@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:id="@+id/layoutEvents"
+    android:orientation="vertical"
+    android:padding="@dimen/app_normal_margin">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/ivNGOPhoto"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginEnd="@dimen/app_normal_margin"
+            android:scaleType="centerCrop"
+            tools:src="@tools:sample/avatars" />
+
+        <LinearLayout
+            android:weightSum="2"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_weight="1"
+                android:id="@+id/tvNGOName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#333333"
+                android:textSize="16sp"
+                tools:text="@tools:sample/full_names" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtPostTitle"
+        android:hint="Event post title"
+        android:inputType="text"
+        style="@style/METStyle" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtPostDesc"
+        android:lines="3"
+        android:hint="Event post description"
+        android:inputType="textMultiLine"
+        style="@style/METStyle" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtEventVenue"
+        android:hint="Event venue"
+        android:inputType="text"
+        style="@style/METStyle" />
+
+
+    <ImageView
+        android:layout_marginTop="@dimen/app_small_margin"
+        android:id="@+id/createPost"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/ic_menu_gallery"
+        android:adjustViewBounds="false"
+        tools:src="@tools:sample/backgrounds/scenic"
+        android:scaleType="centerCrop"
+        />
+
+    <Button
+        android:id="@+id/btnUpload"
+        style="@style/ButtonStyle"
+        android:layout_marginTop="@dimen/app_normal_margin"
+        android:text="@string/upload_post" />
+
+
+</LinearLayout>
+
+

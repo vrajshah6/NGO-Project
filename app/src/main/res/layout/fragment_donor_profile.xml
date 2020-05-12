@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DonorProfileFragment"
+    android:orientation="vertical"
+    android:layout_margin="@dimen/app_normal_margin"
+    android:gravity="center">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ngoLogo"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:src="@drawable/animal"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#FF000000"/>
+
+        <!--<TextView-->
+            <!--android:id="@+id/edtDonorEmail"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextViewStyle"-->
+            <!--android:text="@string/donor_email_ID"-->
+            <!---->
+            <!--/>-->
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDonorEmail"
+        android:hint="Enter new mail ID"
+        android:inputType="textEmailAddress"
+        style="@style/METStyle" />
+
+        <!--<TextView-->
+            <!--android:layout_marginTop="@dimen/app_normal_margin"-->
+            <!--android:id="@+id/edtDonorMobileNo"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextViewStyle"-->
+            <!--android:text="@string/donor_mobile_no"-->
+            <!--/>-->
+
+        <!--<TextView-->
+            <!--android:layout_marginTop="@dimen/app_normal_margin"-->
+            <!--android:id="@+id/edtDonorPassword"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--style="@style/TextViewStyle"-->
+            <!--android:text="@string/donor_password"-->
+         <!--/>-->
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDonorPassword"
+        android:hint="Enter new password"
+        android:inputType="textPassword"
+        style="@style/METStyle" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtDonorRepassword"
+        android:hint="Re-enter new password "
+        android:inputType="textEmailAddress"
+        style="@style/METStyle" />
+
+    <Button
+        android:layout_margin="@dimen/app_normal_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnUpdateUserProfile"
+        android:text="Update "
+        style="@style/ButtonStyle"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">NGO App</string>
+
+    <!--Hint-->
+    <string name="email_id_hint">Enter Email ID </string>
+    <string name="password_hint">Enter Password</string>
+    <string name="reenter_password">Re-enter Password</string>
+    <string name="ngo_name_hint">Enter NGO Name </string>
+    <string name="ngo_admin_name_hint">NGO Admin Name </string>
+    <string name="ngo_offlice_location_hint">NGO Office Location</string>
+    <string name="about_ngo_hint">About NGO</string>
+    <string name="mobileno_hint">Mobile Number </string>
+
+    <!--Activity Donor Register-->
+    <string name="registerbutton">Register</string>
+
+
+    <!-- Main Activity -->
+    <string name="login">Login</string>
+    <string name="register_for_donor">Register for Donor</string>
+
+
+    <!--Activity NGO Registration-->
+    <string name="registerngo">Register for NGO</string>
+    <string name="NGO_register_activity_title">NGO Registration</string>
+    <string name="Back">Back</string>
+    <string name="Finish">Finish</string>
+
+    <!--Ngo Register-->
+    <string name="step1of3">Step 1/3</string>
+    <string name="step2of3">Step 2/3</string>
+    <string name="step3of3">Step 3/3</string>
+    <string name="next">Next</string>
+    <string name="back">Back</string>
+    <string name="ngogovregistered">Goverment Registered?</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+    <string name="NGO_Catagory">Select NGO Catagory</string>
+    <string name="slumarea">Slum Area</string>
+    <string name="orphanage">Orphanage</string>
+    <string name="womenempowerment">Women Empowerment</string>
+    <string name="oldage">Old Age</string>
+    <string name="finish">Finish</string>
+    <string name="officelocation">Enter NGO Office Location</string>
+    <string name="aboutNGO">Enter description about your NGO</string>
+
+    <!-- Validations -->
+    <string name="email_required_message">Email is required.</string>
+    <string name="password_required_message">Password is required.</string>
+
+
+    <string name="navigation_drawer_open">Navigation Drawer Open</string>
+    <string name="navigation_drawer_close">Navigation Drawer Close</string>
+
+
+    <!-- Donor Profile -->
+    <string name="donor_email_ID">Your Email ID</string>
+    <string name="donor_mobile_no">Your Mobile No</string>
+    <string name="donor_password">Your Password</string>
+
+    <!-- Donor Fund Raise -->
+    <string name="donate_button">Donate</string>
+    <string name="fund_amout">Total Amount:</string>
+
+
+    <!-- Upload Post -->
+    <string name="upload_post">Upload</string>
+    <string name="post_title">Post Title</string>
+    <string name="post_description">Post Description</string>
+    <string name="fund_amount">Fund Amount</string>
+    <string name="Upload_post">Upload</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="fund_raise_image_url">https://firebasestorage.googleapis.com/v0/b/ngo-project-7a4e8.appspot.com/o/fundraise%1$s%2$s?alt=media</string>
+    <string name="event_image_url">https://firebasestorage.googleapis.com/v0/b/ngo-project-7a4e8.appspot.com/o/fundraise%1$s%2$s?alt=media</string>
+
+
+</resources>
